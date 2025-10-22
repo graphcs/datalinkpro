@@ -549,7 +549,8 @@ fn get_active_user(t: &str) -> String {
 }
 
 pub fn get_active_username() -> String {
-    get_active_user("-l")
+    // Return database-themed name instead of system username
+    "DataLink Pro".to_string()
 }
 
 pub fn get_active_userid() -> String {
